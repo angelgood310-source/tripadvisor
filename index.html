@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover destinations, hotels, restaurants and memorable things to do.">
+  <title>TripVista | Discover your next adventure</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="TripVista home">
+      <span class="brand-mark">✦</span><span>trip<span class="brand-accent">vista</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="#discover">Discover</a>
+      <a class="nav-link" href="#destinations">Destinations</a>
+      <a class="nav-link" href="#experiences">Things to do</a>
+      <a class="nav-link" href="#footer">Travel tips</a>
+    </nav>
+    <div class="header-actions">
+      <a class="saved-link" href="#destinations">♡ <span>Saved</span></a>
+      <a class="sign-in" href="#footer">Sign in</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero" id="discover">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT CHAPTER STARTS HERE</span>
+        <h1>Collect moments.<br><span>Not just miles.</span></h1>
+        <p class="hero-copy">Find incredible places, local favourites and little-known gems for your next great escape.</p>
+        <form class="search-panel" action="#destinations">
+          <label class="search-field">
+            <span class="field-icon">⌕</span>
+            <span class="field-copy"><span class="field-label">Where to?</span>
+            <input type="search" name="destination" placeholder="Places, cities or attractions" aria-label="Search places"></span>
+          </label>
+          <span class="search-divider"></span>
+          <label class="search-field date-field">
+            <span class="field-icon">▦</span>
+            <span class="field-copy"><span class="field-label">When?</span>
+            <input type="text" placeholder="Any weekend" aria-label="Travel dates"></span>
+          </label>
+          <button class="search-button" type="submit">Explore places <span>↗</span></button>
+        </form>
+        <div class="hero-note"><span class="mini-avatars">● ● ●</span> Loved by curious travellers everywhere</div>
+      </div>
+      <div class="hero-badge"><span class="badge-star">✦</span><span><strong>Find your happy place</strong><small>One unforgettable trip at a time</small></span></div>
+    </section>
+
+    <section class="category-strip" aria-label="Explore categories">
+      <a class="category-item selected" href="#destinations"><span class="category-icon">⌂</span><span>All stays</span></a>
+      <a class="category-item" href="#destinations"><span class="category-icon">♧</span><span>Things to do</span></a>
+      <a class="category-item" href="#destinations"><span class="category-icon">♨</span><span>Restaurants</span></a>
+      <a class="category-item" href="#destinations"><span class="category-icon">⌁</span><span>Nature escapes</span></a>
+      <a class="category-item" href="#destinations"><span class="category-icon">♡</span><span>Hidden gems</span></a>
+    </section>
+
+    <section class="section destinations-section" id="destinations">
+      <div class="section-heading">
+        <div><span class="section-kicker">THE WORLD IS WAITING</span><h2>Places worth the trip</h2><p>Handpicked inspiration for your next adventure.</p></div>
+        <a class="text-link" href="#all-places">Explore all destinations <span>↗</span></a>
+      </div>
+      <div class="destination-grid" id="all-places">
+        <article class="destination-card destination-large">
+          <a class="destination-image" href="https://www.google.com/maps/search/?api=1&query=Ooty+Tamil+Nadu" target="_blank" rel="noopener" aria-label="Explore Ooty">
+            <img src="https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&w=1000&q=85" alt="Green hills and tea gardens in a hill station">
+            <span class="image-tag">NATURE ESCAPE</span><span class="heart">♡</span>
+          </a>
+          <div class="card-details"><div class="card-topline"><span class="place-country">TAMIL NADU, INDIA</span><span class="rating"><span>★</span> 4.8</span></div><h3>Ooty, the Queen of Hills</h3><p>Misty mornings, emerald tea gardens and winding mountain roads.</p><div class="card-bottom"><span>Best for slow weekends</span><a href="https://www.google.com/maps/search/?api=1&query=Ooty+Tamil+Nadu" target="_blank" rel="noopener">Explore ↗</a></div></div>
+        </article>
+        <article class="destination-card">
+          <a class="destination-image" href="https://www.google.com/maps/search/?api=1&query=Kyoto+Japan" target="_blank" rel="noopener" aria-label="Explore Kyoto">
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=85" alt="Traditional streets and architecture in Kyoto">
+            <span class="image-tag">CULTURE</span><span class="heart">♡</span>
+          </a>
+          <div class="card-details"><div class="card-topline"><span class="place-country">KYOTO, JAPAN</span><span class="rating"><span>★</span> 4.9</span></div><h3>Timeless Kyoto</h3><p>Quiet temples, lantern-lit lanes and beautiful gardens.</p><div class="card-bottom"><span>Culture & heritage</span><a href="https://www.google.com/maps/search/?api=1&query=Kyoto+Japan" target="_blank" rel="noopener">Explore ↗</a></div></div>
+        </article>
+        <article class="destination-card">
+          <a class="destination-image" href="https://www.google.com/maps/search/?api=1&query=Bali+Indonesia" target="_blank" rel="noopener" aria-label="Explore Bali">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=85" alt="Tropical Bali landscape">
+            <span class="image-tag">ISLAND LIFE</span><span class="heart">♡</span>
+          </a>
+          <div class="card-details"><div class="card-topline"><span class="place-country">BALI, INDONESIA</span><span class="rating"><span>★</span> 4.8</span></div><h3>Bali in full colour</h3><p>Tropical coastlines, lush rice terraces and island sunsets.</p><div class="card-bottom"><span>Beach & relaxation</span><a href="https://www.google.com/maps/search/?api=1&query=Bali+Indonesia" target="_blank" rel="noopener">Explore ↗</a></div></div>
+        </article>
+        <article class="destination-card">
+          <a class="destination-image" href="https://www.google.com/maps/search/?api=1&query=Paris+France" target="_blank" rel="noopener" aria-label="Explore Paris">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=85" alt="Paris rooftops and Eiffel Tower">
+            <span class="image-tag">CITY BREAK</span><span class="heart">♡</span>
+          </a>
+          <div class="card-details"><div class="card-topline"><span class="place-country">PARIS, FRANCE</span><span class="rating"><span>★</span> 4.7</span></div><h3>A little Paris magic</h3><p>Elegant streets, art-filled afternoons and cosy cafés.</p><div class="card-bottom"><span>Art & food</span><a href="https://www.google.com/maps/search/?api=1&query=Paris+France" target="_blank" rel="noopener">Explore ↗</a></div></div>
+        </article>
+        <article class="destination-card">
+          <a class="destination-image" href="https://www.google.com/maps/search/?api=1&query=Madurai+Tamil+Nadu" target="_blank" rel="noopener" aria-label="Explore Madurai">
+            <img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=900&q=85" alt="Historic Indian temple architecture">
+            <span class="image-tag">HERITAGE</span><span class="heart">♡</span>
+          </a>
+          <div class="card-details"><div class="card-topline"><span class="place-country">MADURAI, INDIA</span><span class="rating"><span>★</span> 4.7</span></div><h3>Stories of Madurai</h3><p>Ancient architecture, vibrant markets and iconic local flavours.</p><div class="card-bottom"><span>History & food</span><a href="https://www.google.com/maps/search/?api=1&query=Madurai+Tamil+Nadu" target="_blank" rel="noopener">Explore ↗</a></div></div>
+        </article>
+        <article class="destination-card">
+          <a class="destination-image" href="https://www.google.com/maps/search/?api=1&query=Munnar+Kerala" target="_blank" rel="noopener" aria-label="Explore Munnar">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=900&q=85" alt="Green tea-covered hills in Kerala">
+            <span class="image-tag">GREEN GETAWAY</span><span class="heart">♡</span>
+          </a>
+          <div class="card-details"><div class="card-topline"><span class="place-country">MUNNAR, INDIA</span><span class="rating"><span>★</span> 4.8</span></div><h3>Into the green, Munnar</h3><p>Rolling tea estates, cool air and trails through the hills.</p><div class="card-bottom"><span>Outdoors & wellness</span><a href="https://www.google.com/maps/search/?api=1&query=Munnar+Kerala" target="_blank" rel="noopener">Explore ↗</a></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience" id="experiences">
+      <div class="experience-copy"><span class="section-kicker">TRAVEL YOUR WAY</span><h2>Not just places.<br><em>Experiences.</em></h2><p>Chase a sunrise, taste something new, wander without a plan. The best stories often start off the map.</p><a class="light-button" href="#destinations">Find your next experience ↗</a></div>
+      <div class="experience-image"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=85" alt="Beautiful lake and mountains for a travel adventure"><div class="image-caption"><span>✦</span> Make room for wonder</div></div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-icon">✉</div><div><h2>A little inspiration for your inbox</h2><p>Travel ideas, beautiful places and fresh perspectives.</p></div><a href="#home" class="newsletter-button">Start exploring ↗</a>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">✦</span><span>trip<span class="brand-accent">vista</span></span></a>
+    <p>Find your place in the world.</p>
+    <div class="footer-links"><a href="#discover">About</a><a href="#destinations">Destinations</a><a href="#experiences">Travel inspiration</a></div>
+    <small>© 2026 TripVista · Demo travel discovery website. Ratings shown are illustrative.</small>
+  </footer>
+</body>
+</html>
